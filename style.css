@@ -6,6 +6,8 @@
   --light-border-color: #969696;
 
   --primary-color: orangered;
+
+  --blob-blur: 25px;
 }
 
 * {
@@ -30,7 +32,9 @@ body {
 
   display: flex;
   flex-direction: column;
-  gap: 4vw;
+  gap: 5vh;
+
+  overflow-x: hidden;
 }
 
 /* Navbar styles */
@@ -143,4 +147,74 @@ video {
   height: 60vh;
   object-fit: cover;
   border-radius: 30px;
+
+  z-index: 5;
+}
+
+/* hero blobs */
+#hero_blob {
+  position: absolute;
+  right: -5%;
+  top: 45vh;
+
+  width: 45vw;
+  height: 40vw;
+  border-top-left-radius: 50%;
+  border-bottom-left-radius: 50%;
+
+  background-color: var(--primary-color);
+  filter: blur(var(--blob-blur));
+
+  animation: anim3 8s ease-in-out infinite alternate;
+}
+
+/* sub blobs */
+#blob1 {
+  position: absolute;
+  background-color: var(--primary-color);
+  height: 30vh;
+  width: 30vh;
+  border-radius: 50%;
+  /* filter: blur(var(--blob-blur)); */
+
+  animation: anim2 6s ease-in-out infinite alternate;
+}
+
+#blob2 {
+  position: absolute;
+  background-color: var(--primary-color);
+  height: 30vh;
+  width: 30vh;
+  border-radius: 50%;
+  /* filter: blur(var(--blob-blur)); */
+
+  animation: anim1 4s ease-in-out infinite alternate;
+}
+
+@keyframes anim1 {
+  from {
+    transform: translate(75%, -20%);
+  }
+  to {
+    transform: translate(0%, 10%);
+    scale: 1.2;
+  }
+}
+
+@keyframes anim2 {
+  from {
+    transform: translate(5%, -5%);
+  }
+  to {
+    transform: translate(-25%, 30%);
+  }
+}
+
+@keyframes anim3 {
+  from {
+    transform: translate(-5%, -0%);
+  }
+  to {
+    transform: translate(8%, 5%);
+  }
 }
