@@ -196,4 +196,61 @@
     border-radius: 50%;
     background-color: var(--primary-color);
   }
+
+  /* About us content */
+  #about_us {
+    min-height: 30vh;
+    width: 100%;
+    padding: 0 2vw;
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+    gap: 2vw;
+  }
+
+  #about_us h2 {
+    width: 100%;
+    font-size: 7vw;
+    letter-spacing: -0.05rem;
+    font-weight: 700;
+    color: var(--text-color);
+
+    z-index: 5;
+  }
+
+  #about_us_short {
+    width: 100%;
+    height: 100%;
+    margin-top: 12vh;
+
+    display: flex;
+    flex-direction: column;
+  }
+
+  #about_us_short img {
+    width: 100%;
+    border-radius: 10px;
+  }
+
+  #about_us_short p {
+    font-size: 4vw;
+    font-weight: 600;
+    color: var(--text-light-color);
+  }
+
+  #about_blob {
+    position: absolute;
+    left: 10vw;
+    top: 10vh;
+
+    width: 50vw;
+    height: 50vw;
+    border-radius: 50%;
+
+    background: linear-gradient(rgb(255, 94, 0), var(--primary-color));
+    filter: blur(15px);
+
+    animation: aboutBlobAnim 7s ease-in-out infinite alternate;
+  }
 }
