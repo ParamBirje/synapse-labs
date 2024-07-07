@@ -1,7 +1,7 @@
-// let scroll = new LocomotiveScroll({
-//   el: document.querySelector("main"),
-//   smooth: true,
-// });
+let scroll = new LocomotiveScroll({
+  el: document.querySelector("main"),
+  smooth: true,
+});
 
 let fixedImage = document.querySelector("#fixed_image");
 
