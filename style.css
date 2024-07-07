@@ -439,7 +439,7 @@ video {
 
 /* Companies section */
 #companies {
-  height: 50vh;
+  height: fit-content;
   width: 100%;
   padding-bottom: 4vw;
   background-color: var(--background-color);
@@ -456,10 +456,12 @@ video {
 }
 
 .swiper-slide {
-  font-size: 18px;
+  font-size: 2vw;
+  padding-left: 3vw;
   border-left: 1px solid var(--light-border-color);
 
   width: 30%;
+  height: fit-content;
 }
 
 .swiper-slide img {
@@ -471,7 +473,7 @@ video {
 
 /* footer content */
 #transparent_footer {
-  height: 15vh;
+  height: 30vh;
 }
 
 footer {

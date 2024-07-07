@@ -374,4 +374,29 @@
     height: 100%;
     object-fit: cover;
   }
+
+  /* footer content */
+  #transparent_footer {
+    height: 15vh;
+  }
+
+  footer {
+    position: fixed;
+    height: 100vh;
+    width: 100%;
+    z-index: 9;
+    bottom: 0;
+    background-color: var(--text-color);
+    padding-bottom: 5vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: end;
+  }
+
+  footer h2 {
+    font-size: 10vw;
+    font-weight: 700;
+    color: var(--background-color);
+  }
 }
