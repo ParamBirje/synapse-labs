@@ -453,6 +453,7 @@ video {
   height: 100%;
 
   margin: 4vh 0;
+  cursor: grab;
 }
 
 .swiper-slide {
