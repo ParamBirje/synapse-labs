@@ -107,7 +107,7 @@ menu a::after {
 
 /* Hero content */
 #hero_content {
-  height: 40vh;
+  min-height: 40vh;
   width: 100%;
   padding: 4vh 2vw;
   display: flex;
@@ -144,7 +144,7 @@ menu a::after {
 /* Video player */
 video {
   width: 100%;
-  height: 60vh;
+  height: 80vh;
   object-fit: cover;
   border-radius: 30px;
 
@@ -155,7 +155,7 @@ video {
 #hero_blob {
   position: absolute;
   right: -5%;
-  top: 45vh;
+  top: 49vh;
 
   width: 45vw;
   height: 40vw;
@@ -216,5 +216,49 @@ video {
   }
   to {
     transform: translate(8%, 5%);
+  }
+}
+
+/* next section */
+#about {
+  background-color: var(--background-color);
+  padding: 5vh 0;
+}
+
+#marquee {
+  display: flex;
+  overflow-x: hidden;
+}
+
+#marquee::-webkit-scrollbar {
+  display: none;
+}
+
+#marquee_container {
+  width: 100%;
+  padding: 0 1vw;
+  display: flex;
+  align-items: center;
+  flex-wrap: nowrap;
+  gap: 2vw;
+
+  font-size: 3vw;
+
+  animation: marqueeAnim 10s linear infinite;
+}
+
+.separator {
+  width: 3vw;
+  height: 3vw;
+  border-radius: 50%;
+  background-color: var(--primary-color);
+}
+
+@keyframes marqueeAnim {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
   }
 }
