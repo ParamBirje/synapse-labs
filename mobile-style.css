@@ -156,4 +156,44 @@
 
     animation: anim1 4s ease-in-out infinite alternate;
   }
+
+  /* next section */
+  #about {
+    background-color: var(--background-color);
+    padding: 0 0;
+
+    display: flex;
+    flex-direction: column;
+    gap: 4vh;
+  }
+
+  #marquee {
+    display: flex;
+    overflow-x: hidden;
+    margin: 3vh 0;
+  }
+
+  #marquee::-webkit-scrollbar {
+    display: none;
+  }
+
+  #marquee_container {
+    width: 100%;
+    padding: 0 1vw;
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    gap: 2vw;
+
+    font-size: 3vw;
+
+    animation: marqueeAnim 10s linear infinite;
+  }
+
+  .separator {
+    width: 3vw;
+    height: 3vw;
+    border-radius: 50%;
+    background-color: var(--primary-color);
+  }
 }
