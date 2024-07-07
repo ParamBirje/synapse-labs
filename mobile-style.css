@@ -258,6 +258,7 @@
   #projects {
     background-color: var(--background-color);
     padding-top: 5vh;
+    min-height: fit-content;
   }
 
   #projects h5,
@@ -339,5 +340,38 @@
 
     background-size: cover;
     pointer-events: none;
+  }
+
+  /* Companies section */
+  #companies {
+    width: 100%;
+    height: fit-content;
+    background-color: var(--background-color);
+
+    position: relative;
+  }
+
+  /* Swiper styles */
+  .swiper {
+    width: 100%;
+    height: 100%;
+
+    margin: 4vh 0;
+  }
+
+  .swiper-slide {
+    font-size: 18px;
+    border-left: 1px solid var(--light-border-color);
+    padding-left: 3vw;
+
+    width: 60%;
+    height: fit-content;
+  }
+
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
   }
 }
