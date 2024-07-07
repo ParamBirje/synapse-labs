@@ -27,12 +27,15 @@ body {
   padding: 0 2vw;
   background-color: var(--background-color);
   position: relative;
+
+  display: flex;
+  flex-direction: column;
+  gap: 4vw;
 }
 
 /* Navbar styles */
 nav {
   padding: 2vw 2vw;
-  margin-bottom: 2vh;
   width: 100%;
 
   display: flex;
@@ -132,4 +135,12 @@ menu a::after {
   font-weight: 600;
   letter-spacing: -0.05rem;
   line-height: 2.1vw;
+}
+
+/* Video player */
+video {
+  width: 100%;
+  height: 60vh;
+  object-fit: cover;
+  border-radius: 30px;
 }
