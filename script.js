@@ -45,3 +45,15 @@ hamburger.addEventListener("click", function () {
   hamburger.textContent = "Close";
   isOpen = true;
 });
+
+// Loader
+let loader = document.querySelector("#loader");
+setTimeout(() => {
+  loader.textContent = "THE";
+}, 1500);
+setTimeout(() => {
+  loader.textContent = "FUTURE";
+}, 2500);
+setTimeout(() => {
+  loader.style.top = "-100%";
+}, 4000);
