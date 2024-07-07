@@ -1,5 +1,9 @@
 :root {
   --background-color: #efeae3;
+  --text-color: #000;
+  --text-light-color: #383838;
+
+  --primary-color: orangered;
 }
 
 * {
@@ -20,4 +24,72 @@ body {
   width: 100%;
   background-color: var(--background-color);
   position: relative;
+}
+
+/* Navbar styles */
+nav {
+  padding: 2vw 2vw;
+  width: 100%;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#logo {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: var(--text-color);
+}
+
+#logo span {
+  color: var(--primary-color);
+}
+
+menu {
+  display: flex;
+  align-items: center;
+  gap: 1vw;
+}
+
+menu a {
+  padding: 10px 25px;
+  border: 1px solid #969696;
+  border-radius: 50px;
+  position: relative;
+  overflow: hidden;
+
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 1.1rem;
+  letter-spacing: -0.025rem;
+  color: var(--text-color);
+}
+
+menu a div {
+  z-index: 9;
+  position: relative;
+}
+
+menu a:hover div {
+  color: var(--background-color);
+}
+
+menu a:hover::after {
+  bottom: 0;
+  border-radius: 0;
+}
+
+menu a::after {
+  content: "";
+  height: 110%;
+  width: 100%;
+  background-color: var(--text-color);
+  position: absolute;
+
+  left: 0;
+  bottom: -110%;
+
+  border-radius: 50%;
+  transition: all 400ms;
 }
