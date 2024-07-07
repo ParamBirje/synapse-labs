@@ -3,6 +3,8 @@
   --text-color: #000;
   --text-light-color: #383838;
 
+  --light-border-color: #969696;
+
   --primary-color: orangered;
 }
 
@@ -22,6 +24,7 @@ body {
 #hero {
   min-height: 100vh;
   width: 100%;
+  padding: 0 2vw;
   background-color: var(--background-color);
   position: relative;
 }
@@ -29,6 +32,7 @@ body {
 /* Navbar styles */
 nav {
   padding: 2vw 2vw;
+  margin-bottom: 2vh;
   width: 100%;
 
   display: flex;
@@ -54,7 +58,7 @@ menu {
 
 menu a {
   padding: 10px 25px;
-  border: 1px solid #969696;
+  border: 1px solid var(--light-border-color);
   border-radius: 50px;
   position: relative;
   overflow: hidden;
@@ -92,4 +96,40 @@ menu a::after {
 
   border-radius: 50%;
   transition: all 400ms;
+}
+
+/* Hero content */
+#hero_content {
+  height: 40vh;
+  width: 100%;
+  padding: 4vh 2vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  gap: 2vw;
+
+  border-bottom: 1px solid var(--light-border-color);
+}
+
+#hero_content h1 {
+  width: 50%;
+  color: var(--text-color);
+
+  text-align: right;
+  text-transform: uppercase;
+  font-size: 7vw;
+  font-weight: 700;
+  letter-spacing: -0.2rem;
+  line-height: 6vw;
+  transform: scale(1, 1.05);
+}
+
+#hero_content p {
+  width: 40%;
+
+  text-align: left;
+  font-size: 2vw;
+  font-weight: 600;
+  letter-spacing: -0.05rem;
+  line-height: 2.1vw;
 }
