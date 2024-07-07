@@ -27,3 +27,21 @@ projectItems.forEach((item) => {
     fixedImage.style.display = "none";
   });
 });
+
+// Hamburger menu
+let hamburger = document.querySelector("#hamburger");
+let isOpen = false;
+hamburger.addEventListener("click", function () {
+  let fullHam = document.querySelector("#full_scr_hamburger");
+
+  if (isOpen) {
+    isOpen = false;
+    fullHam.style.top = "-100%";
+    hamburger.textContent = "Menu";
+    return;
+  }
+
+  fullHam.style.top = 0;
+  hamburger.textContent = "Close";
+  isOpen = true;
+});

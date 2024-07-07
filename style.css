@@ -47,10 +47,16 @@ main {
 nav {
   padding: 2vw 2vw;
   width: 100%;
+  position: relative;
+  z-index: 100;
 
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+#hamburger {
+  display: none;
 }
 
 #logo {
@@ -451,7 +457,7 @@ footer {
 }
 
 footer h2 {
-  font-size: 14.5vw;
+  font-size: 14vw;
   font-weight: 700;
   color: var(--background-color);
 }

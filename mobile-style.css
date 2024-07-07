@@ -1,0 +1,75 @@
+@media (max-width: 600px) {
+  #hero {
+    min-height: 100vh;
+    width: 100%;
+    padding: 0 0;
+    background-color: var(--background-color);
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+    gap: 5vh;
+
+    overflow-x: hidden;
+  }
+
+  #full_scr_hamburger {
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    top: -100%;
+
+    background-color: rgba(0, 0, 0, 0.508);
+    transition: all ease-in-out 700ms;
+
+    z-index: 99;
+  }
+
+  #actual_ham_menu {
+    height: 50%;
+    width: 100%;
+    background-color: var(--background-color);
+    padding: 2vh 5vw;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: end;
+
+    font-size: 10vw;
+  }
+
+  /* Navbar styles */
+  nav {
+    padding: 4vw 4vw;
+    width: 100%;
+    background-color: var(--background-color);
+  }
+
+  #logo {
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: var(--text-color);
+  }
+
+  #logo span {
+    color: var(--primary-color);
+  }
+
+  menu {
+    display: none;
+  }
+
+  #hamburger {
+    display: block;
+    letter-spacing: -0.05rem;
+    font-size: 1rem;
+    font-weight: medium;
+    color: var(--text-color);
+    padding: 2vw 4vw;
+    background-color: var(--background-color);
+
+    border: 1px solid var(--light-border-color);
+    border-radius: 5vw;
+  }
+}
